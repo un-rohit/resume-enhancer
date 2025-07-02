@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Enhancer</title>
+</head>
+<body>
+    <h1>AI Resume Enhancer</h1>
+    <form method="post">
+        Name: <input type="text" name="name"><br>
+        Skills: <input type="text" name="skills"><br>
+        Target Role: <input type="text" name="role"><br>
+        <input type="submit" value="Generate Summary">
+    </form>
+    {% if result %}
+    <h3>Generated Summary:</h3>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
